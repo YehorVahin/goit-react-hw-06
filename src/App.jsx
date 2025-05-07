@@ -1,4 +1,5 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import ComponentA from './component/ComponentA'
 import ComponentB from './component/ComponentB'
@@ -8,11 +9,11 @@ function App() {
 
   
   return (
-    <>
-    <ComponentA/>
-    <ComponentB/>
+    <Routes>
+    <Route path="/" element={<ComponentA/>}/>
+    <Route path="/" element={<ComponentB/>}/>
     <MyComponent/>
-    </>
+    </Routes>
   )
 }
 
